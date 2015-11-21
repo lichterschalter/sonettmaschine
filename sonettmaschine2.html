@@ -1,0 +1,298 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>SONETTMASCHINE II</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <style>
+
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 150%;
+        margin: 0;
+        height: 100%;
+        white-space:nowrap;
+    }
+
+    #wrapper {
+        max-width: 430px;
+        position:absolute;
+        padding-left: 100px;
+        padding-top: 80px;
+    }
+
+    #content {
+        padding-bottom: 50px; /*height of the footer*/
+    }
+
+    a {
+        color: black;
+    }
+
+    footer {
+        width:100%;
+        position:absolute;
+        left: 100px;
+        bottom: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="content">
+
+  <h4>S O N E T T M A S C H I N E &nbsp I I</h4>
+
+  <p></p>
+
+  <script>
+    //--ERSTE STROPHE --
+    //ERSTE ZEILE
+    var firstWord = ["zum beispiel: ", "sie sagte auch: ", "gekreisel: "];
+    var firstRand = Math.floor(Math.random() * 3);
+    var secondWord = ["nein – ", "ja – ", "etwa – "];
+    var secondRand = Math.floor(Math.random() * 3);
+    var thirdWord = ["rot! ", "orange?", "grün."];
+    var thirdRand = Math.floor(Math.random() * 3);
+
+    //ZWEITE ZEILE
+    var firstWordZ2 = ["flachgehauen ", "wenig ", "viel "];
+    var firstRandZ2 = Math.floor(Math.random() * 3);
+    var secondWordZ2 = ["gesagtes ", "gespieltes ", "ertrickstes ", "geschachteltes "];
+    var secondRandZ2 = Math.floor(Math.random() * 4);
+    var thirdWordZ2 = ["zeichen", "gewinnen", "kämpfen"];
+    var thirdRandZ2 = Math.floor(Math.random() * 3);
+
+    //DRITTE ZEILE
+    var firstWordZ3 = ["beton ", "mai ", "kaffeesatz "];
+    var firstRandZ3 = Math.floor(Math.random() * 3);
+    var secondWordZ3 = ["grau ", "rosa ", "lila ", "gelb "];
+    var secondRandZ3 = Math.floor(Math.random() * 4);
+    var thirdWordZ3 = ["tropft", "rinnt", "fließt"];
+    var thirdRandZ3 = Math.floor(Math.random() * 3);
+
+    //VIERTE ZEILE
+    var firstWordZ4 = ["auf deine Hose, ", "auf deine Bluse, ", "auf dein nachthemd, "];
+    var firstRandZ4 = Math.floor(Math.random() * 3);
+    var secondWordZ4 = ["da ", "da ", "da ", "da "];
+    var secondRandZ4 = Math.floor(Math.random() * 4);
+    var thirdWordZ4 = ["", "", ""];
+    var thirdRandZ4 = Math.floor(Math.random() * 3);
+    //-------------------------------------------------------------------
+
+
+    //--ZWEITE STROPHE --
+    //ERSTE ZEILE
+    var firstWord_S2 = ["dergleichen mehr ", "gab es nichts ", "alles "];
+    var firstRand_S2 = Math.floor(Math.random() * 3);
+    var secondWord_S2 = ["außer ", "wie ", "doch "];
+    var secondRand_S2 = Math.floor(Math.random() * 3);
+    var thirdWord_S2 = ["schnitte–", "gefalztes papier–", "textkonfetti–"];
+    var thirdRand_S2 = Math.floor(Math.random() * 3);
+
+    //ZWEITE ZEILE
+    var firstWordZ2_S2 = ["ovalparties ", "körner ", "scheiß so: "];
+    var firstRandZ2_S2 = Math.floor(Math.random() * 3);
+    var secondWordZ2_S2 = ["schrille ", "schräge ", "selt same ", "trübe "];
+    var secondRandZ2_S2 = Math.floor(Math.random() * 4);
+    var thirdWordZ2_S2 = ["vergleiche", "lieben", "annulierungen"];
+    var thirdRandZ2_S2 = Math.floor(Math.random() * 3);
+
+    //DRITTE ZEILE
+    var firstWordZ3_S2 = ["denn wie, sagte er, ", "aber wo, sagte sie, ", "wie lange, fragte sie, "];
+    var firstRandZ3_S2 = Math.floor(Math.random() * 3);
+    var secondWordZ3_S2 = ["sind wir ", "bin ich ", "werden wir ", "bist du "];
+    var secondRandZ3_S2 = Math.floor(Math.random() * 4);
+    var thirdWordZ3_S2 = ["heute morgen", "morgen abend", "gestern nacht"];
+    var thirdRandZ3_S2 = Math.floor(Math.random() * 3);
+
+    //VIERTE ZEILE
+    var firstWordZ4_S2 = ["punkte! ", "flächen! ", "ellipsen! "];
+    var firstRandZ4_S2 = Math.floor(Math.random() * 3);
+    var secondWordZ4_S2 = ["rot-kantig. ", "schief-weiß. ", "klebrig-türkis. ", "gelb-flüssig. "];
+    var secondRandZ4_S2 = Math.floor(Math.random() * 4);
+    var thirdWordZ4_S2 = ["sonst nichts", "das ist alles", "nicht mehr"];
+    var thirdRandZ4_S2 = Math.floor(Math.random() * 3);
+    //-------------------------------------------------------------------
+
+
+    //--DRITTE STROPHE --
+    //ERSTE ZEILE
+    var firstWord_S3 = ["es riecht hier ", "es fühlt sich hier ", "es schmeckt hier "];
+    var firstRand_S3 = Math.floor(Math.random() * 3);
+    var secondWord_S3 = ["nach ", "nach ", "nach "];
+    var secondRand_S3 = Math.floor(Math.random() * 3);
+    var thirdWord_S3 = ["pigmenten", "dir und filzstiften", "buntem honig"];
+    var thirdRand_S3 = Math.floor(Math.random() * 3);
+
+    //ZWEITE ZEILE
+    var firstWordZ2_S3 = ["porenarbeit – ", "synapsenfunk – ", "stäbchenresonanz – "];
+    var firstRandZ2_S3 = Math.floor(Math.random() * 3);
+    var secondWordZ2_S3 = ["das abtragen von masse ", "das glasieren unserer haut ", "das hinzufügen von material ", "das abtasten von wegen "];
+    var secondRandZ2_S3 = Math.floor(Math.random() * 4);
+    var thirdWordZ2_S3 = ["ist wichtig", "scheint richtig", "fühlt sich gut an"];
+    var thirdRandZ2_S3 = Math.floor(Math.random() * 3);
+
+    //DRITTE ZEILE
+    var firstWordZ3_S3 = ["sie schrieb auch: ", "sie schrie auch: ", "sie sagte auch: "];
+    var firstRandZ3_S3 = Math.floor(Math.random() * 3);
+    var secondWordZ3_S3 = ["ich und: ", "du und: ", "ich und: ", "wir und: "];
+    var secondRandZ3_S3 = Math.floor(Math.random() * 4);
+    var thirdWordZ3_S3 = ["kreisen", "körper", "kippen"];
+    var thirdRandZ3_S3 = Math.floor(Math.random() * 3);
+    //-------------------------------------------------------------------
+
+
+    //--VIERT STROPHE --
+    //ERSTE ZEILE
+    var firstWord_S4 = ["so wie das licht hier reinfällt ", "fünf minuten licht ", "das licht (und der schatten) "];
+    var firstRand_S4 = Math.floor(Math.random() * 3);
+    var secondWord_S4 = ["kugelrund ", "gebrechlich dünn ", "satt "];
+    var secondRand_S4 = Math.floor(Math.random() * 3);
+    var thirdWord_S4 = ["der rausch", "die süffigkeit", "der wirbel"];
+    var thirdRand_S4 = Math.floor(Math.random() * 3);
+
+    //ZWEITE ZEILE
+    var firstWordZ2_S4 = ["kann ", "darf ", "soll "];
+    var firstRandZ2_S4 = Math.floor(Math.random() * 3);
+    var secondWordZ2_S4 = ["gold ", "lavendel ", "gelb ", "azur "];
+    var secondRandZ2_S4 = Math.floor(Math.random() * 4);
+    var thirdWordZ2_S4 = ["fasern?", "verlaufen?", "verspringen?"];
+    var thirdRandZ2_S4 = Math.floor(Math.random() * 3);
+
+    //DRITTE ZEILE
+    var firstWordZ3_S4 = ["alles ", " ", " "];
+    var firstRandZ3_S4 = Math.floor(Math.random() * 3);
+    var secondWordZ3_S4 = ["überflutung ", "überschwemmung ", "überrinnen ", "übergehen "];
+    var secondRandZ3_S4 = Math.floor(Math.random() * 4);
+    var thirdWordZ3_S4 = ["wie sonst auch", "wie eh und je", "wie immer"];
+    var thirdRandZ3_S4 = Math.floor(Math.random() * 3);
+    //-------------------------------------------------------------------
+
+
+    $(document).ready(function(){
+      //--ERSTE STROPHE
+      //ERSTE ZEILE
+      $("p:first").append(firstWord[firstRand]);
+      $("p:first").append(secondWord[secondRand]);
+      $("p:first").append(thirdWord[thirdRand]);
+      $("p:first").append("</br>");
+
+      //ZWEITE ZEILE
+      $("p:first").append(firstWordZ2[firstRandZ2]);
+      $("p:first").append(secondWordZ2[secondRandZ2]);
+      $("p:first").append(thirdWordZ2[thirdRandZ2]);
+      $("p:first").append("</br>");
+
+      //DRITTE ZEILE
+      $("p:first").append(firstWordZ3[firstRandZ3]);
+      $("p:first").append(secondWordZ3[secondRandZ3]);
+      $("p:first").append(thirdWordZ3[thirdRandZ3]);
+      $("p:first").append("</br>");
+
+      //VIERTE ZEILE
+      $("p:first").append(firstWordZ4[firstRandZ4]);
+      $("p:first").append(secondWordZ4[secondRandZ4]);
+      $("p:first").append(thirdWordZ4[thirdRandZ4]);
+      $("p:first").append("</br>");
+
+      //LEERE ZEILE
+      $("p:first").append("</br>");
+      //----------------------------------------------
+
+
+      //--ZWEITE STROPHE
+      //ERSTE ZEILE
+      $("p:first").append(firstWord_S2[firstRand_S2]);
+      $("p:first").append(secondWord_S2[secondRand_S2]);
+      $("p:first").append(thirdWord_S2[thirdRand_S2]);
+      $("p:first").append("</br>");
+
+      //ZWEITE ZEILE
+      $("p:first").append(firstWordZ2_S2[firstRandZ2_S2]);
+      $("p:first").append(secondWordZ2_S2[secondRandZ2_S2]);
+      $("p:first").append(thirdWordZ2_S2[thirdRandZ2_S2]);
+      $("p:first").append("</br>");
+
+      //DRITTE ZEILE
+      $("p:first").append(firstWordZ3_S2[firstRandZ3_S2]);
+      $("p:first").append(secondWordZ3_S2[secondRandZ3_S2]);
+      $("p:first").append(thirdWordZ3_S2[thirdRandZ3_S2]);
+      $("p:first").append("</br>");
+
+      //VIERTE ZEILE
+      $("p:first").append(firstWordZ4_S2[firstRandZ4_S2]);
+      $("p:first").append(secondWordZ4_S2[secondRandZ4_S2]);
+      $("p:first").append(thirdWordZ4_S2[thirdRandZ4_S2]);
+      $("p:first").append("</br>");
+
+      //LEERE ZEILE
+      $("p:first").append("</br>");
+      //----------------------------------------------
+
+
+      //--DRITTE STROPHE
+      //ERSTE ZEILE
+      $("p:first").append(firstWord_S3[firstRand_S3]);
+      $("p:first").append(secondWord_S3[secondRand_S3]);
+      $("p:first").append(thirdWord_S3[thirdRand_S3]);
+      $("p:first").append("</br>");
+
+      //ZWEITE ZEILE
+      $("p:first").append(firstWordZ2_S3[firstRandZ2_S3]);
+      $("p:first").append(secondWordZ2_S3[secondRandZ2_S3]);
+      $("p:first").append(thirdWordZ2_S3[thirdRandZ2_S3]);
+      $("p:first").append("</br>");
+
+      //DRITTE ZEILE
+      $("p:first").append(firstWordZ3_S3[firstRandZ3_S3]);
+      $("p:first").append(secondWordZ3_S3[secondRandZ3_S3]);
+      $("p:first").append(thirdWordZ3_S3[thirdRandZ3_S3]);
+      $("p:first").append("</br>");
+
+      //LEERE ZEILE
+      $("p:first").append("</br>");
+      //----------------------------------------------
+
+
+      //--VIERTE STROPHE
+      //ERSTE ZEILE
+      $("p:first").append(firstWord_S4[firstRand_S4]);
+      $("p:first").append(secondWord_S4[secondRand_S4]);
+      $("p:first").append(thirdWord_S4[thirdRand_S4]);
+      $("p:first").append("</br>");
+
+      //ZWEITE ZEILE
+      $("p:first").append(firstWordZ2_S4[firstRandZ2_S4]);
+      $("p:first").append(secondWordZ2_S4[secondRandZ2_S4]);
+      $("p:first").append(thirdWordZ2_S4[thirdRandZ2_S4]);
+      $("p:first").append("</br>");
+
+      //DRITTE ZEILE
+      $("p:first").append(firstWordZ3_S4[firstRandZ3_S4]);
+      $("p:first").append(secondWordZ3_S4[secondRandZ3_S4]);
+      $("p:first").append(thirdWordZ3_S4[thirdRandZ3_S4]);
+      $("p:first").append("</br>");
+
+      //LEERE ZEILE
+      $("p:first").append("</br>");
+      //----------------------------------------------
+
+    });
+  </script>
+
+  <hr>
+  </div>
+
+  <footer>
+    <a href="sonettmaschine2.html">Neues Sonett erstellen</a> &nbsp &nbsp
+    <a href="manifest.html">Zum Manifest</a> &nbsp &nbsp
+    <a href="index.html"><</a>
+  </footer>
+
+  </div>
+
+</body>
+</html>
