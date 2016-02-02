@@ -11,7 +11,25 @@
   <div id="wrapper">
     <div id="content">
 
-  <img src="img/lyrische_fabrik.gif" width="400px" height="400px">
+  <script>
+    var rand_img = Math.floor(Math.random() * 2);
+    var src_img;
+    console.log( rand_img );
+    switch( rand_img ){
+      case 0:
+        src_img = "img/barometer1.gif";
+        break;
+      case 1:
+        src_img = "img/barometer2_transparent.gif";
+        break;
+    }
+
+    $(document).ready(function(){
+      $("p:first").append("<img src=\" " + src_img + " \" width=\"400px\" height=\"400px\">");
+    });
+  </script>
+
+  <p>
 
   <h4>L Y R I S C H E &nbsp &nbsp F A B R I K</h4>
 
