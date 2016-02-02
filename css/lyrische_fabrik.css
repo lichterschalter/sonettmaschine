@@ -1,0 +1,40 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    margin: 0;
+    height: 90%;
+}
+
+a:hover {
+    <!-- cursor: url(mutti_polpa.cur), progress; -->
+}
+
+h4 {
+    white-space:nowrap;
+   }
+
+#wrapper {
+    max-width: 60%;
+    position:absolute;
+    padding-left: 100px;
+    padding-top: 60px;
+}
+
+#content {
+    padding-bottom: 50px; /*height of the footer*/
+}
+
+a {
+    color: black;
+}
+
+footer {
+    width:100%;
+    position:absolute;
+    left: 100px;
+    bottom: 10px;
+}
+
+.italic {
+    font-style:italic;
+}
