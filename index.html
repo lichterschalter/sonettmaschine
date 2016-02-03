@@ -12,7 +12,7 @@
     <div id="content">
 
   <script>
-    var rand_img = Math.floor(Math.random() * 2);
+    var rand_img = Math.floor(Math.random() * 4);
     var src_img;
     console.log( rand_img );
     switch( rand_img ){
@@ -21,6 +21,12 @@
         break;
       case 1:
         src_img = "img/barometer2_transparent.gif";
+        break;
+      case 2:
+        src_img = "img/letters.gif";
+        break;
+      case 3:
+        src_img = "img/letters_pink.gif";
         break;
     }
 
