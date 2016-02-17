@@ -1,4 +1,4 @@
-<html>
+<html lang="de">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>LYRISCHE FABRIK</title>
@@ -11,77 +11,115 @@
   <div id="wrapper">
     <div id="content">
 
+  <p id="image"></p>
+  <p class="imageHide">Klicke um Animation zu verbergen</p>
+
   <script>
     var rand_img = Math.floor(Math.random() * 20);
     //rand_img = 19;
     var src_img;
+    var img_alt = "Sich wiederholende kurze Animation.";
     console.log( rand_img );
     switch( rand_img ){
       case 0:
         src_img = "img/barometer1.gif";
+        img_alt = "Animation der beiden Zeiger eines Barometers in gelb und blau. Es erscheinen die Lettern F-A-B-R-IK.";
         break;
       case 1:
         src_img = "img/barometer2_transparent.gif";
+        img_alt = "Animation eines roten Barometers: die beiden Zeiger fallen ab. Zwischendurch blitzen die Lettern F-A-B-R-I-K auf.";
         break;
       case 2:
         src_img = "img/letters.gif";
+        img_alt = "Animation: ein blauer Buchstabe verwandelt sich in den folgenden. Die Buchstaben lauten: F-A-B-R-I-K.";
         break;
       case 3:
         src_img = "img/letters_pink.gif";
+        img_alt = "Animation: ein roter Buchstabe verwandelt sich in den folgenden. Die Buchstaben lauten: F-A-B-R-I-K.";
         break;
       case 4:
         src_img = "img/BLOE.gif";
+        img_alt = "Schwarz/Weiß gezeichnete Animation eines Gesichts das die Zunge zeigt und wieder einzieht. Auf der Zunge steht BLÖ.";
         break;
       case 5:
         src_img = "img/factory_a.gif";
+        img_alt = "Animation einer aus schwarzen Linien gezeichneten Fabrik, die den Buchstaben A aus dem Schornstein spuckt und wieder einsaugt.";
         break;
       case 6:
         src_img = "img/poems.gif";
+        img_alt = "Animation. Nacheinander erscheinen die schwarzen Lettern POEMS.";
         break;
       case 7:
         src_img = "img/zahnraeder.gif";
+        img_alt = "Animation von türkisen Zahnrädern.";
         break;
       case 8:
         src_img = "img/kran.gif";
+        img_alt = "Animation eines schwarzen Krans der Buchstaben hochzieht und wieder verschwinden lässt.";
         break;
       case 9:
         src_img = "img/drei_zahnraeder.gif";
+        img_alt = "Animation von zwei in die Luft geworfenen Zahnrädern.";
         break;
       case 10:
         src_img = "img/knaeul.gif";
+        img_alt = "Animation eines roten sich drehenden Kreisels.";
         break;
       case 11:
         src_img = "img/factory.gif";
+        img_alt = "Zeichnung einer Fabrik in türkis und grün. Animation eines kleinen blauen Autos, das rundherumfährt.";
         break;
       case 12:
         src_img = "img/woman_factory.gif";
+        img_alt = "Farbige Animation einer Frau am Fließband, die Bücher produziert.";
         break;
       case 13:
         src_img = "img/woman_factory_bw.gif";
+        img_alt = "Gezeichnete Animation in schwarz/weiß einer Frau am Fließband, die Bücher produziert.";
         break;
       case 14:
         src_img = "img/ZORO.gif";
+        img_alt = "Animatin der roten großen Lettern ZORO. Sie erscheinen nacheinander.";
         break;
       case 15:
         src_img = "img/signs_blue.gif";
+        img_alt = "Animation schriftähnlicher blauer Zeichen, die sich ständig verändern.";
         break;
       case 16:
         src_img = "img/signs_red.gif";
+        img_alt = "Animation schriftähnlicher roter Zeichen, die sich ständig verändern.";
         break;
       case 17:
         src_img = "img/signs_yellow.gif";
+        img_alt = "Animation schriftähnlicher gelber Zeichen, die sich ständig verändern.";
         break;
       case 18:
         src_img = "img/poetic_machines_green.gif";
+        img_alt = "Blinkend erscheinen nacheinander die grünen Buchstaben des Wortes poetic machines. Dazwischen blinken die Zeichen $€*# auf.";
         break;
       case 19:
         src_img = "img/poetic_machines_purple.gif";
+        img_alt = "Blinkend erscheinen nacheinander die lila Buchstaben des Wortes poetic machines. Dazwischen blinken die Zeichen $€*# auf.";
         break;
     }
 
     $(document).ready(function(){
-      $("p:first").append("<img src=\" " + src_img + " \" width=\"400px\" height=\"400px\">");
+      $( "#image" ).append(
+        "<img src=\" " + src_img + " \" width=\"400px\" height=\"400px\" alt=\" " + img_alt + " \" >"
+      );
+      $( "#image" ).click(function() {
+        $( this ).slideUp();
+        $( ".imageHide" ).slideUp();
+      });
+      $( "#image" ).mouseenter(function() {
+        $( ".imageHide" ).css( "color", "black" );
+      });
+      $( "#image" ).mouseleave(function() {
+        $( ".imageHide" ).css( "color", "white" );
+      });
     });
+
+
   </script>
 
   <p>

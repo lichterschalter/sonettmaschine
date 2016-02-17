@@ -46,3 +46,9 @@ footer {
 .einzugLinks {
     padding-left: 30px;
 }
+
+.imageHide {
+    color: white;
+    font-size: 65%;
+    text-align: right;
+}
