@@ -248,14 +248,38 @@
       $("p:first").append("</br>");
       //----------------------------------------------
 
-    });
+      //FADE OUT BEIM ERZEUGEN EINES SONETTS
+      $("body").on("click", "p", function(){
+          $( "#content" ).fadeOut();
+          $( "footer" ).fadeOut();
+          $( "footer" ).promise().done(function(){
+              window.location = "sonettmaschine2.html";
+          });
+      });
+      $("body").on("click", ".neuesGedicht", function(event){
+          event.preventDefault();
+          $( "#content" ).fadeOut();
+          $( "footer" ).fadeOut();
+          $( "footer" ).promise().done(function(){
+              window.location = "sonettmaschine2.html";
+          });
+      });
+      $("body").on("click", "h4", function(){
+          $( "#content" ).fadeOut();
+          $( "footer" ).fadeOut();
+          $( "footer" ).promise().done(function(){
+              window.location = "sonettmaschine2.html";
+          });
+      });
+
+    });//end of document ready
   </script>
 
   <hr>
   </div>
 
   <footer>
-    <a href="sonettmaschine2.html" class="neuesGedicht">Neues Sonett erstellen</a> &nbsp &nbsp
+    <a class="neuesGedicht" href="sonettmaschine2.html" class="neuesGedicht">Neues Sonett erstellen</a> &nbsp &nbsp
     <a href="manifest.html">Zum Manifest</a> &nbsp &nbsp
     <a href="index.html"><</a>
   </footer>

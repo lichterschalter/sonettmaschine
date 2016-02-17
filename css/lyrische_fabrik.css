@@ -41,6 +41,7 @@ footer {
 
 .neuesGedicht {
     color: green;
+    text-decoration:underline;
 }
 
 .einzugLinks {
