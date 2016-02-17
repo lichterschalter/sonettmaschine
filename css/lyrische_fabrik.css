@@ -38,3 +38,11 @@ footer {
 .italic {
     font-style:italic;
 }
+
+.neuesGedicht {
+    color: green;
+}
+
+.einzugLinks {
+    padding-left: 30px;
+}
