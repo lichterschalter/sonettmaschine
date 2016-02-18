@@ -1,0 +1,116 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>SONETTMASCHINE</title>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <link rel="stylesheet" href="css/lyrische_fabrik.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="content">
+
+  <h4>HAIKUMASCHINE</h4>
+
+  <p></p>
+
+  <script>
+    //--ERSTE STROPHE --
+    //ERSTE ZEILE
+    var firstWord = ["Rundherum ", "Im Herzen ", "Am Grund ", "Im Herzen ", "Im Herzen "];
+    var firstRand = Math.floor(Math.random() * 5);
+    var secondWord = ["ochsengroß ", "steht ", "summt ", "Im Herzen ", "Im Herzen "];
+    var secondRand = Math.floor(Math.random() * 5);
+    var thirdWord = ["die Meute", "die Süffigkeit", "die Ratlosigkeit", "Im Herzen ", "Im Herzen "];
+    var thirdRand = Math.floor(Math.random() * 5);
+
+    //ZWEITE ZEILE
+    var firstWordZ2 = ["die ", "ein ", "vielmehr ", "Im Herzen ", "Im Herzen "];
+    var firstRandZ2 = Math.floor(Math.random() * 5);
+    var secondWordZ2 = ["gebündelt ", "raues ", "haftet ", "geschachtelt ", "Im Herzen "];
+    var secondRandZ2 = Math.floor(Math.random() * 5);
+    var thirdWordZ2 = ["um ", "Ich", "zerfließt", "Im Herzen ", "Im Herzen "];
+    var thirdRandZ2 = Math.floor(Math.random() * 5);
+    var fourthWordZ2 = ["um ", "Ich", "zerfließt", "Im Herzen ", "Im Herzen "];
+    var fourthRandZ2 = Math.floor(Math.random() * 5);
+    var fifthWordZ2 = ["um ", "Ich", "zerfließt", "Im Herzen ", "Im Herzen "];
+    var fifthRandZ2 = Math.floor(Math.random() * 5);
+
+    //DRITTE ZEILE
+    var firstWordZ3 = ["Kommodora ", "Scheherazade ", "Geliebte ", "Im Herzen ", "Im Herzen "];
+    var firstRandZ3 = Math.floor(Math.random() * 5);
+    var secondWordZ3 = ["denn ", "weil ", "aber ", "so ", "Im Herzen "];
+    var secondRandZ3 = Math.floor(Math.random() * 5);
+    var thirdWordZ3 = ["trostlos rinnt", "gnadenlos rinnt", "faltenlos rinnt", "Im Herzen ", "Im Herzen "];
+    var thirdRandZ3 = Math.floor(Math.random() * 5);
+
+    //-------------------------------------------------------------------
+
+
+
+
+    $(document).ready(function(){
+      //--ERSTE STROPHE
+      //ERSTE ZEILE
+      $("p:first").append(firstWord[firstRand]);
+      $("p:first").append(secondWord[secondRand]);
+      $("p:first").append(thirdWord[thirdRand]);
+      $("p:first").append("</br>");
+
+      //ZWEITE ZEILE
+      $("p:first").append(firstWordZ2[firstRandZ2]);
+      $("p:first").append(secondWordZ2[secondRandZ2]);
+      $("p:first").append(thirdWordZ2[thirdRandZ2]);
+      $("p:first").append(fourthWordZ2[thirdRandZ2]);
+      $("p:first").append(fifthWordZ2[thirdRandZ2]);
+      $("p:first").append("</br>");
+
+      //DRITTE ZEILE
+      $("p:first").append(firstWordZ3[firstRandZ3]);
+      $("p:first").append(secondWordZ3[secondRandZ3]);
+      $("p:first").append(thirdWordZ3[thirdRandZ3]);
+      $("p:first").append("</br>");
+
+      //----------------------------------------------
+
+
+      //FADE OUT BEIM ERZEUGEN EINES SONETTS
+      $("body").on("click", "p", function(){
+          $( "#content" ).fadeOut();
+          $( "footer" ).fadeOut();
+          $( "footer" ).promise().done(function(){
+              window.location = "haiku.html";
+          });
+      });
+      $("body").on("click", ".neuesGedicht", function(event){
+          event.preventDefault();
+          $( "#content" ).fadeOut();
+          $( "footer" ).fadeOut();
+          $( "footer" ).promise().done(function(){
+              window.location = "haiku.html";
+          });
+      });
+      $("body").on("click", "h4", function(){
+          $( "#content" ).fadeOut();
+          $( "footer" ).fadeOut();
+          $( "footer" ).promise().done(function(){
+              window.location = "haiku.html";
+          });
+      });
+
+    }); //end of document ready
+  </script>
+
+  </div>
+
+  <footer>
+    <a href="haiku.html" class="neuesGedicht">Neues Haiku erstellen</a> &nbsp &nbsp
+    <a href="manifest.html">Zum Manifest</a> &nbsp &nbsp
+    <a href="index.html"><</a>
+  </footer>
+
+  </div>
+
+</body>
+</html>
