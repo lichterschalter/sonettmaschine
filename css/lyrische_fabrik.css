@@ -3,16 +3,26 @@ body {
     font-size: 150%;
     margin: 0;
     height: 90%;
-}
-
-a:hover {
-    <!-- cursor: url(mutti_polpa.cur), progress; -->
+    line-height: 28px;
 }
 
 h4 {
     font-size: 100%;
     letter-spacing: 20px;
    }
+
+a {
+    color: black;
+    text-decoration: none;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+a:hover {
+    <!-- cursor: url(mutti_polpa.cur), progress; -->
+    color: blue;
+    border-width: 5px;
+}
 
 #wrapper {
     max-width: 60%;
@@ -23,10 +33,6 @@ h4 {
 
 #content {
     padding-bottom: 100px; /*height of the footer*/
-}
-
-a {
-    color: black;
 }
 
 footer {
@@ -47,7 +53,6 @@ footer {
 
 .neuesGedicht {
     color: green;
-    text-decoration:underline;
 }
 
 .einzugLinks {
