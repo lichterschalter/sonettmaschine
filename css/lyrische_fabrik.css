@@ -11,7 +11,7 @@ a:hover {
 
 h4 {
     font-size: 100%;
-    white-space:nowrap;
+    letter-spacing: 20px;
    }
 
 #wrapper {
@@ -22,7 +22,7 @@ h4 {
 }
 
 #content {
-    padding-bottom: 50px; /*height of the footer*/
+    padding-bottom: 100px; /*height of the footer*/
 }
 
 a {
@@ -30,10 +30,15 @@ a {
 }
 
 footer {
-    width:100%;
+    width:80%;
+    height: 40px;
     position:absolute;
     left: 100px;
     bottom: 10px;
+    padding-top: 15px;
+    border-top: solid;
+    border-width: 2px;
+
 }
 
 .italic {
