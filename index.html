@@ -9,13 +9,13 @@
 <body>
 
   <div id="wrapper">
-    <div id="content">
+    <!--<div id="content">-->
 
   <p id="image"></p>
-  <p class="imageHide">Klicke um Animation zu verbergen</p>
+  <p class="imageHide">Klicke um andere Animation anzuzeigen</p>
 
   <script>
-    var rand_img = Math.floor(Math.random() * 20);
+    var rand_img = Math.floor(Math.random() * 19);
     //rand_img = 19;
     var src_img;
     var img_alt = "Sich wiederholende kurze Animation.";
@@ -78,8 +78,8 @@
         img_alt = "Gezeichnete Animation in schwarz/weiß einer Frau am Fließband, die Bücher produziert.";
         break;
       case 14:
-        src_img = "img/ZORO.gif";
-        img_alt = "Animatin der roten großen Lettern ZORO. Sie erscheinen nacheinander.";
+        src_img = "img/poetic_machines_purple.gif";
+        img_alt = "Blinkend erscheinen nacheinander die lila Buchstaben des Wortes poetic machines. Dazwischen blinken die Zeichen $€*# auf.";
         break;
       case 15:
         src_img = "img/signs_blue.gif";
@@ -97,10 +97,10 @@
         src_img = "img/poetic_machines_green.gif";
         img_alt = "Blinkend erscheinen nacheinander die grünen Buchstaben des Wortes poetic machines. Dazwischen blinken die Zeichen $€*# auf.";
         break;
-      case 19:
-        src_img = "img/poetic_machines_purple.gif";
-        img_alt = "Blinkend erscheinen nacheinander die lila Buchstaben des Wortes poetic machines. Dazwischen blinken die Zeichen $€*# auf.";
-        break;
+      /*case 19:
+        src_img = "img/ZORO.gif";
+        img_alt = "Animation der roten großen Lettern ZORO. Sie erscheinen nacheinander.";
+        break;*/
     }
 
     $(document).ready(function(){
@@ -108,8 +108,10 @@
         "<img src=\" " + src_img + " \" width=\"400px\" height=\"400px\" alt=\" " + img_alt + " \" >"
       );
       $( "#image" ).click(function() {
-        $( this ).slideUp();
-        $( ".imageHide" ).slideUp();
+        $( "#wrapper" ).fadeOut();
+        $( "#wrapper" ).promise().done(function(){
+            window.location = "index.html";
+        });
       });
       $( "#image" ).mouseenter(function() {
         $( ".imageHide" ).css( "color", "black" );
@@ -125,8 +127,8 @@
   <p>
 
   <h4>LYRISCHE FABRIK</h4>
-  <p class="italic">Die hier präsentierten Generatoren </br> erzeugen Zufallspoesie. </br>
-  <!--Links unter jedem Gedicht befindet </br> sich ein grüner Knopf um ein neues </br> Gedicht
+  <!--<p class="italic">Die hier präsentierten Generatoren </br> erzeugen Zufallspoesie. </br>
+  Links unter jedem Gedicht befindet </br> sich ein grüner Knopf um ein neues </br> Gedicht
   erzeugen zu lassen. </p> -->
 
   <p></p>
@@ -146,12 +148,12 @@
   </br>
 
 
-  </div>
-
+  <!--</div>-->
+<!--
   <footer>
       <a class="neuesGedicht" href="index.html">Andere Animation anzeigen</a>
   </footer>
-
+-->
   </div>
 
 </body>
